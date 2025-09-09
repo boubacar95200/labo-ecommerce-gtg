@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="Site de test pour Google Tag Gateway" />
-        <title>Labo E-commerce GTG - Baskets</title>
+        <title>Labo E-commerce GTG - Boutique Google</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -20,17 +20,14 @@
             .google-title .char4 { color: #4285F4; } /* Bleu */
             .google-title .char5 { color: #34A853; } /* Vert */
             .google-title .char6 { color: #EA4335; } /* Rouge */
-            .google-title .char7 { color: #EA4335; } /* Rouge */
-            .google-title .char8 { color: #EA4335; } /* Rouge */
-
-
 
             /* Style pour forcer le ratio des images produit */
             .product-image-container {
                 position: relative;
                 width: 100%;
-                padding-top: 151.3%; /* Ratio de 348/230 = 1.513 */
+                padding-top: 100%; /* Ratio carré 1:1 pour s'adapter à ces images */
                 overflow: hidden;
+                background-color: #f8f9fa; /* Couleur de fond légère */
             }
             .product-image-container img {
                 position: absolute;
@@ -38,7 +35,7 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                object-fit: cover; /* Assure que l'image remplit l'espace sans se déformer */
+                object-fit: contain; /* 'contain' est mieux pour les produits sur fond blanc */
             }
         </style>
     </head>
@@ -82,16 +79,16 @@
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                     
-                    <!-- Produit 1: Nike Air Jordan (LIENS ACTIFS) -->
+                    <!-- Produit 1: Google Montauk Polo (LIENS ACTIFS) -->
                     <div class="col mb-5">
                         <div class="card h-100">
                             <div class="product-image-container">
-                                <a href="product.html"><img class="card-img-top" src="https://images.unsplash.com/photo-1597045566677-8cf032ed6634?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" alt="Nike Air Jordan" /></a>
+                                <a href="product.html"><img class="card-img-top" src="https://cdn.shopify.com/s/files/1/0042/2695/8835/products/Google-Montauk-Polo-Navy-1_1024x1024.jpg?v=1617395085" alt="Google Polo" /></a>
                             </div>
                             <div class="card-body p-4">
                                 <div class="text-center">
-                                    <h5 class="fw-bolder">Nike Air Jordan High</h5>
-                                    180,00 €
+                                    <h5 class="fw-bolder">Google Montauk Polo</h5>
+                                    35,00 €
                                 </div>
                             </div>
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
@@ -100,16 +97,16 @@
                         </div>
                     </div>
 
-                    <!-- Produit 2: Nike Air Max -->
+                    <!-- Produit 2: Googler in Training Tee -->
                     <div class="col mb-5">
                         <div class="card h-100">
                             <div class="product-image-container">
-                                <a href="product.html"><img class="card-img-top" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="Nike Air Max" /></a>
+                                <a href="product.html"><img class="card-img-top" src="https://cdn.shopify.com/s/files/1/0042/2695/8835/products/Googler-in-Training-Toddler-Tee-Light-Blue-1_1024x1024.jpg?v=1617402434" alt="Google Tee" /></a>
                             </div>
                             <div class="card-body p-4">
                                 <div class="text-center">
-                                    <h5 class="fw-bolder">Nike Air Max Pulse</h5>
-                                    160,00 €
+                                    <h5 class="fw-bolder">T-Shirt "Googler in Training"</h5>
+                                    15,00 €
                                 </div>
                             </div>
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
